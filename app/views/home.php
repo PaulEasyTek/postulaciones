@@ -20,26 +20,26 @@
         <div class="container">
             <h1>Postulaciones</h1>
             
-            <p>Para enviar tu postulacion deberas hacerlo a traves de nuestra API de postulaciones.</p>
+            <p>Para enviar tu postulación deberas hacerlo a traves de nuestra API de postulaciones.</p>
             
             <p>Deberas enviar un request al siguiente endpoint:</p>
             
             <pre>POST <?=url('api/v1/postulaciones')?></pre>
             
-            <p>Los siguientes parametros son requeridos:</p>
+            <p>Los siguientes parámetros son requeridos:</p>
             
             <table class="table table-bordered">
                 <tr>
-                    <th>Parametro</th>
+                    <th>Parámetro</th>
                     <th>Descripción</th>
                 </tr>
                 <tr>
                     <td>nombre</td>
-                    <td>Nombre del postulante.</td>
+                    <td>Nombre del postulante</td>
                 </tr>
                 <tr>
                     <td>apellidos</td>
-                    <td>Apellidos del postulante.</td>
+                    <td>Apellidos del postulante</td>
                 </tr>
                 <tr>
                     <td>email</td>
@@ -47,7 +47,7 @@
                 </tr>
                 <tr>
                     <td>repo_url</td>
-                    <td>URL a un repositorio de proyectos donde haya trabajado el postulante. Puede ser un link a GitHub o a algun portafolio del postulante.</td>
+                    <td>URL a un repositorio de proyectos donde haya trabajado el postulante. Puede ser un link a GitHub/Bitbucket o a algún portafolio del postulante.</td>
                 </tr>
                 <tr>
                     <td>linkedin_url</td>
@@ -58,7 +58,7 @@
                     <td>Respuesta textual al siguiente desafío.
                         <br />
                         <br />
-                        "Una empresa hace una rifa, deseo solicitarle al director de la rifa el nombre del ganador para publicarlo. Tengo que hacerlo a traves de un mensaje escrito que se envia y vuelve a traves de Juancho. Que debería enviar ademas de la pregunta, para que Juancho no pueda ver el nombre del ganador de la rifa antes de tiempo."
+                        "Una empresa hace una rifa, deseo solicitarle al director de la rifa el nombre del ganador para publicarlo. Tengo que hacerlo a traves de un mensaje escrito que se envia y vuelve a traves de Juancho. ¿Qué debería enviar además de la pregunta, para que Juancho no pueda ver el nombre del ganador de la rifa antes de tiempo?"
                     </td>
                 </tr>
             </table>
