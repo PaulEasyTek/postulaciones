@@ -11,7 +11,7 @@
 |
 */
 
-Route::controller('/', 'HomeController');
+Route::get('/', 'HomeController@getIndex');
 
 Route::controller('api/v1/postulaciones{extension?}', 'api\v1\PostulacionesController');
 
