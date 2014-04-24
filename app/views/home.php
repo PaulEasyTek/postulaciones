@@ -62,6 +62,17 @@
                     </td>
                 </tr>
             </table>
+            
+            <p>Los parametros deben ser enviados como un objeto JSON. Por ej, un objeto JSON válido sería:</p>
+            
+<pre>{
+    "nombre": "Juancho",
+    "apellidos": "Perez Pinto",
+    "email": "aaa@ejemplo.com",
+    "repo_url": "http://github.com/foo",
+    "linkedin_url": "http://linkedin.com/foo",
+    "respuesta_desafio": "Aquí va la respuesta."
+}</pre>
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
