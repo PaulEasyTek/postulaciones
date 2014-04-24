@@ -24,6 +24,7 @@ class TestController extends \BaseController {
         $json->email='aaa@test.com';
         $json->repo_url='http://google.com';
         $json->linkedin_url='http://google.com';
+        $json->cargo_a_postular='Ingeniero área de desarrollo';
         $json->respuesta_desafio='Hola mundo.';
         
         $content = json_encode($json);

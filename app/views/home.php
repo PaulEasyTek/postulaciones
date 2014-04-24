@@ -54,6 +54,10 @@
                     <td>URL al LinkedIn del postulante. Puede ser tambien una URL hacia un documento que contenga su Curriculum Vitae.</td>
                 </tr>
                 <tr>
+                    <td>cargo_a_postular</td>
+                    <td>Cargo en el cual se desea postular. Ej: Ingeniero área de desarrollo, Ingeniero área de interoperabilidad.</td>
+                </tr>
+                <tr>
                     <td>respuesta_desafio</td>
                     <td>Respuesta textual al siguiente desafío.
                         <br />
@@ -71,6 +75,7 @@
     "email": "aaa@ejemplo.com",
     "repo_url": "http://github.com/foo",
     "linkedin_url": "http://linkedin.com/foo",
+    "cargo_a_postular": "Ingeniero área de desarrollo",
     "respuesta_desafio": "Aquí va la respuesta."
 }</pre>
         </div>

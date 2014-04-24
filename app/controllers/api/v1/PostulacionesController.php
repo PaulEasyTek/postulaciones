@@ -21,9 +21,10 @@ class PostulacionesController extends \BaseController {
                     'nombre' => 'required',
                     'apellidos' => 'required',
                     'email' => 'required|email',
-            'repo_url' => 'required|active_url',
-            'linkedin_url' => 'required|active_url',
-            'respuesta_desafio' => 'required',
+                    'repo_url' => 'required|active_url',
+                    'linkedin_url' => 'required|active_url',
+                    'cargo_a_postular' => 'required',
+                    'respuesta_desafio' => 'required'
                 )
         );
         
@@ -34,6 +35,7 @@ class PostulacionesController extends \BaseController {
             $postulacion->email = \Input::get('email');
             $postulacion->repo_url = \Input::get('repo_url');
             $postulacion->linkedin_url = \Input::get('linkedin_url');
+            $postulacion->cargo_a_postular = \Input::get('cargo_a_postular');
             $postulacion->respuesta_desafio = \Input::get('respuesta_desafio');
 
             $postulacion->save();
