@@ -32,8 +32,8 @@ class PostulacionesController extends \BaseController {
                     'nombre' => 'required',
                     'apellidos' => 'required',
                     'email' => 'required|email',
-                    'repo_url' => 'required|active_url',
-                    'linkedin_url' => 'required|active_url',
+                    'repo_url' => 'required|url',
+                    'linkedin_url' => 'required|url',
                     'cargo_a_postular' => 'required',
                     'respuesta_desafio' => 'required'
                 )
