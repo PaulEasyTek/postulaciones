@@ -15,6 +15,17 @@ class PostulacionesController extends \BaseController {
       |	Route::get('/', 'HomeController@showWelcome');
       |
      */
+    
+    public function getIndex() {
+        $postulaciones=\Postulacion::all();
+        
+        $array=$postulaciones->toArray();
+        
+        $response=\Response::json($array,400);
+        
+        return $response;
+    }
+    
     public function postIndex() {
 
         $validator = \Validator::make(\Input::all(), array(

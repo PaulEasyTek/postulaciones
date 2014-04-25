@@ -11,8 +11,14 @@
 |
 */
 
+Route::filter('basic.once', function(){
+    return Auth::onceBasic('username');
+});
+
+
 Route::get('/', 'HomeController@getIndex');
 
 Route::controller('api/v1/postulaciones{extension?}', 'api\v1\PostulacionesController');
+Route::get('api/v1/postulaciones{extension?}', array('before' => 'basic.once', 'uses' => 'api\v1\PostulacionesController@getIndex'));
 
 Route::controller('api/v1/test', 'api\v1\TestController');
