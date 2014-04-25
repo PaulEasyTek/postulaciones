@@ -6,6 +6,11 @@
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  */
 
+//Correccion a bug de php con fastcgi en apache, donde no se envian las credenciales al hacer basic authentication
+if(isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])){
+    list($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW']) = explode(':', base64_decode(substr($_SERVER['REDIRECT_HTTP_AUTHORIZATION'], 6)));
+}
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
