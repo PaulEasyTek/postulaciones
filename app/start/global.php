@@ -51,6 +51,14 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
+App::missing(function($exception)
+{
+    $respuesta=new stdClass();
+    $respuesta->codigo=404;
+    $respuesta->mensaje='URL no encontrada.';
+    return Response::json($respuesta,404);
+});
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler
