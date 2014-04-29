@@ -16,12 +16,31 @@ class PostulacionesController extends \BaseController {
       |
      */
     
+    /*
+    public function __construct() {
+        $this->afterFilter(function($response) {
+            $response->headers->set('Access-Control-Allow-Origin', '*');
+            return $response;
+        });
+    }
+     *
+     */
+
+    public function optionsIndex(){
+        $response=\Response::json(null,200);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        $response->headers->set('Access-Control-Allow-Methods', 'POST');
+        $response->headers->set('Access-Control-Allow-Headers', 'content-type');
+        
+        return $response;
+    }
+    
     public function getIndex() {
         $postulaciones=\Postulacion::all();
         
         $array=$postulaciones->toArray();
         
-        $response=\Response::json($array,400);
+        $response=\Response::json($array,200);
         
         return $response;
     }
